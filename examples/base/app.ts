@@ -67,5 +67,8 @@ axios({
   url: '/base/post',
   data: {
     a: 1
-  }
+  },
+  responseType: 'text'
+}).then(res => {
+  console.log(res)
 })
