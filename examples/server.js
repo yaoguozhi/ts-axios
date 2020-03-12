@@ -40,6 +40,12 @@ router.post('/base/post', function (req, res) {
   res.send(req.body)
 })
 
+router.post('/error/post', function (req, res) {
+  setTimeout(() => {
+    res.send(req.body)
+  }, 3000)
+})
+
 app.use(router)
 
 const port = process.env.PORT || 8081
