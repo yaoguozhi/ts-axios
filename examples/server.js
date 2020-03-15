@@ -46,6 +46,10 @@ router.post('/error/post', function (req, res) {
   }, 3000)
 })
 
+router.post('/config/post', (req, res) => {
+  //res.json(res.body)
+})
+
 app.use(router)
 
 const port = process.env.PORT || 8081
