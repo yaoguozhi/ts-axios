@@ -30,7 +30,6 @@ export function buildUrl(url: string, params?: any): string {
     values.forEach(val => {
       if (isDate(val)) {
         val = val.toISOString()
-        console.log(val)
       } else if (isPlainObject(val)) {
         val = JSON.stringify(val)
       }

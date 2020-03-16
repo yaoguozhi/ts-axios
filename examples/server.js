@@ -47,7 +47,8 @@ router.post('/error/post', function (req, res) {
 })
 
 router.post('/config/post', (req, res) => {
-  //res.json(res.body)
+  console.log(req.body)
+  res.json(req.body)
 })
 
 app.use(router)
